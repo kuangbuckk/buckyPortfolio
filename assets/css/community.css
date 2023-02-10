@@ -1,0 +1,145 @@
+/* Variables */
+:root {
+    --font-family: "Roboto", sans-serf;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #fcfcfc;
+    --primary-color: #4756df;
+    --secondary-color: #ff7235;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+  }
+  /* Variables end */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.col{
+    float: left;
+}
+
+.col-third{
+    width: 33.33333%;
+}
+
+.clear{
+    clear: both;
+}
+
+@font-face {
+    font-family: Minecraft;
+    src: url(../../fonts/MinecraftBold-nMK1.otf);
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    height: 3rem;
+    font-family: Minecraft;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0em 2em;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 3rem;
+    padding: 0rem 1rem;
+    display: block;
+}
+
+nav a:hover{
+    color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+#content{
+    padding: 5rem;
+    text-align: center;
+}
+
+#content h1{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+#content strong{
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+#content p{
+    text-align:start;
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 0rem 3rem;
+}
+
+#content img{
+    width: 40%;
+    height: 200px;
+}
+
+#content button{
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    margin-top: 3rem;
+    width: 6.5rem;
+    padding: 0.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#content button:hover{
+   color: rgb(159, 202, 250);
+   border: 1px solid rgb(159, 202, 250);
+}
+
+#footer{
+    background-color: gray;
+    text-align: center;
+    padding: 2rem;
+}

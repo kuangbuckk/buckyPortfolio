@@ -1,0 +1,146 @@
+/* Variables */
+:root {
+    --font-family: "Roboto", sans-serf;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #fcfcfc;
+    --primary-color: #4756df;
+    --secondary-color: #ff7235;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+  }
+  /* Variables end */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Minecraft;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.col{
+    float: left;
+}
+
+.col-third{
+    width: 33.33333%;
+}
+
+.clear{
+    clear: both;
+}
+
+@font-face {
+    font-family: Minecraft;
+    src: url(../../fonts/MinecraftBold-nMK1.otf);
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    height: 3rem;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0em 2em;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 3rem;
+    padding: 0rem 1rem;
+    display: block;
+}
+
+nav a:hover{
+    color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+.container{
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#aboutMe{
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image: url(../images/wp2953107.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#aboutMe span{
+    color: var(--secondary-color);
+}
+
+#aboutMe p{
+    font-size: 1.2rem;
+}
+
+#aboutMe img{
+    width: 16rem;
+    height: 19rem;
+}
+
+#myProjects{
+    text-align: center;
+    margin: 3rem;
+    line-height: 3rem;
+}
+
+#myProjects .items{
+    margin: 0rem 1rem;
+}
+
+#myProjects p{
+    
+}
+
+#myProjects .items img{
+    width: 100%;
+    height: 10.3em;
+    box-shadow: 6px 5px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 1em;
+}
+
+#footer{
+    background-color: gray;
+    text-align: center;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+    
+} 
