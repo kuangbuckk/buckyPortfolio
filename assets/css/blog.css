@@ -88,6 +88,9 @@ nav a:hover{
 }
 
 #content{
+    margin: 0 auto;
+    width: 75rem;
+    height: 50rem;
     padding: 5rem;
     text-align: center;
 }
@@ -109,12 +112,13 @@ nav a:hover{
     text-align:start;
     font-size: 1rem;
     font-weight: 800;
-    padding: 0rem 3rem;
+    padding: 3rem 3rem;
 }
 
 #content img{
     width: 40%;
     height: 100%;
+    object-fit: cover;
 }
 
 #content button{
@@ -142,7 +146,7 @@ nav a:hover{
 
 
 @media screen and (max-width: 992px) {
-    .container{
+    /* .container{
         display: block;
     }    
 
@@ -155,5 +159,5 @@ nav a:hover{
     
     #content p{
         font-size: 0.8rem;
-    }
+    } */
 } 
