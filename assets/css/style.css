@@ -50,7 +50,6 @@ body{
 nav{
     position: fixed;
     top: 0;
-    top: 0;
     left: 0;
     right: 0;
     background-color: white;
@@ -136,6 +135,7 @@ nav a:hover{
 }
 
 #footer{
+    width: 100%;
     background-color: gray;
     text-align: center;
     padding: 2rem;
