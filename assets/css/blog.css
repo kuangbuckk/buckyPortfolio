@@ -148,3 +148,13 @@ nav a:hover{
     text-align: center;
     padding: 2rem;
 }
+
+@media screen and (max-width: 420px) {
+    #content p{
+        text-align:start;
+        font-size: 0.7em;
+        font-weight: 800;
+        padding: 2rem 2rem;
+        max-height:max-content;
+    }
+}
