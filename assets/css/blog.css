@@ -22,7 +22,7 @@ html {
 
 body{
     font-family: 'Montserrat', sans-serif;
-    max-height: 60vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -90,7 +90,7 @@ nav a:hover{
 }
 
 #content{
-    padding: 5rem;
+    padding: 7rem;
     text-align: center;
 }
 
@@ -100,7 +100,7 @@ nav a:hover{
     height: 40rem;
     border: 1px solid black;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     overflow: hidden;
 }
@@ -116,6 +116,7 @@ nav a:hover{
     font-size: 1em;
     font-weight: 800;
     padding: 2rem 2rem;
+    max-height:max-content;
 }
 
 #content img{
