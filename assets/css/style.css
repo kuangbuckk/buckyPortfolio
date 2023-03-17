@@ -13,6 +13,7 @@
     --bottom-margin-2: 1rem;
     --line-height: 1.7rem;
     --transition: 0.3s;
+    --border-color: rgba(0, 0, 0, 0.1);
   }
   /* Variables end */
 
@@ -22,7 +23,7 @@ html {
 
 body{
     font-family: Minecraft;
-    min-height: 100vh;
+    min-height: 30vh;
     display: flex;
     flex-direction: column;
 }
@@ -31,6 +32,7 @@ body{
     padding: 0;
     margin: 0;
     border: none;
+    box-sizing: border-box;
 }
 
 .col{
@@ -57,7 +59,8 @@ nav{
     right: 0;
     background-color: white;
     z-index: 1;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid var(--border-color);
+    box-shadow: 0 3px 5px var(--border-color);
     display: flex;
     align-self: center;
     justify-content: space-between;
@@ -96,7 +99,7 @@ nav a:hover{
 }
 
 #aboutMe{
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: var(--border-color);
     background-image: url(../images/wp2953107.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -199,6 +202,8 @@ nav a:hover{
    border: 1px solid rgb(159, 202, 250);
 }
 
-@media screen and (max-width: 992px) {
-    
-} 
+@media screen and (max-width: 600px) {
+    nav{
+        height: 6rem;
+    }
+}
